@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1 class="title">Encriptador</h1>
+        </div>
+    </section>
+
+    <div class="flex-box">
+        <div class="container">
+            <textarea class="textarea" placeholder="Encriptar" rows="10" id="encriptar"></textarea>
+            <div class="container">
+                <button class="button" onclick="encriptar()">Encriptar</button>
+                <button class="button" onclick="copiar('encriptar')">Copiar</button>
+                <button class="button" onclick="borrar('encriptar')">Borrar</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <textarea class="textarea" placeholder="Desencriptar" rows="10" id="desencriptar"></textarea>
+            <div class="container">
+                <button class="button" onclick="desencriptar()">Desencriptar</button>
+                <button class="button" onclick="copiar('desencriptar')">Copiar</button>
+                <button class="button" onclick="borrar('desencriptar')">Borrar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <strong>Encriptador</strong> por Daniel Contreras Chávez.
+            </p>
+            <a href="https://github.com/DanielContrerasCh"><img src="img/github.png" id="logo"></a>
+        </div>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
